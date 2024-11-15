@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(255,122,122);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('fundo_ask.png');
+    background-size: contain; /* A imagem irá se ajustar ao tamanho da tela, mantendo a proporção */
+    background-position: center; /* A imagem estará centrada */
+    background-repeat: no-repeat; /* A imagem não será repetida */
+    position: relative;
+}
+
+
+/* Media Queries para tornar o layout responsivo */
+@media (max-width: 1200px) {
+    body {
+        background-size: cover; /* A imagem de fundo ainda cobrirá toda a tela */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* A imagem de fundo continua coberta em telas pequenas */
+        background-position: top; /* Ajuste a posição da imagem em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: top; /* Ajuste para dispositivos móveis */
+    }
+}
+
+/* Estilo do contêiner dos botões */
+.btn {
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+    position: absolute; /* Necessário para posicionar os botões de forma fixa na tela */
+    top: 50%; /* Centraliza os botões verticalmente */
+    left: 50%; /* Centraliza os botões horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para garantir que o contêiner fique centrado */
+}
+
+/* Estilo do botão SIM */
+.sim {
+    margin-right:150%;
+    padding: 10px 20px;
+    background-color: #000; /* Fundo preto */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão NÂO */
+.nao {
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 0%;
+    padding: 10px 20px;
+    background-color: #000; /* Fundo preto */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
