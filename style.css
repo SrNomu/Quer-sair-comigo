@@ -8,31 +8,31 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('fundo_ask.png');
-    background-size: contain; /* A imagem irá se ajustar ao tamanho da tela, mantendo a proporção */
+    background-size: 80%; /* Ajusta o tamanho da imagem para 80% do tamanho original */
     background-position: center; /* A imagem estará centrada */
     background-repeat: no-repeat; /* A imagem não será repetida */
     position: relative;
 }
 
-
 /* Media Queries para tornar o layout responsivo */
 @media (max-width: 1200px) {
     body {
-        background-size: cover; /* A imagem de fundo ainda cobrirá toda a tela */
+        background-size: 200%; /* A imagem será ajustada para 80% do seu tamanho */
+        background-position: center; /* Mantém a imagem centralizada */
     }
 }
 
 @media (max-width: 768px) {
     body {
-        background-size: cover; /* A imagem de fundo continua coberta em telas pequenas */
-        background-position: top; /* Ajuste a posição da imagem em telas menores */
+        background-size: 200%; /* A imagem se ajusta para 80% do tamanho em telas pequenas */
+        background-position: center; /* A imagem continua centralizada */
     }
 }
 
 @media (max-width: 480px) {
     body {
-        background-size: cover;
-        background-position: top; /* Ajuste para dispositivos móveis */
+        background-size:200%; /* Para dispositivos móveis, a imagem tem 80% do seu tamanho */
+        background-position: center; /* A imagem fica centrada */
     }
 }
 
